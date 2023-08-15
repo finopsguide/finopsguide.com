@@ -1,0 +1,80 @@
+---
+// import '~/assets/styles/base.css';
+
+// import MetaTags from '~/components/common/MetaTags.astro';
+// import BasicScripts from '~/components/common/BasicScripts.astro';
+
+// import { MetaSEO } from '~/types';
+// import { SITE } from '~/config.mjs';
+
+// export interface Props {
+//   meta?: MetaSEO;
+// }
+
+// const { meta = {} } = Astro.props;
+// const { language = 'en', textDirection = 'ltr' } = SITE;
+---
+
+<!DOCTYPE html>
+<!-- <html lang={language} dir={textDirection} class="2xl:text-[20px]"> -->
+<html class="2xl:text-[20px]">
+  <head>
+    <!-- <MetaTags {...meta} /> -->
+    <style is:global>
+      .child-img_no-shadow img {
+        box-shadow: none !important;
+      }
+      .child-img_float-left img {
+        float: left;
+        margin-right: 15px;
+        margin-top: 0 !important;
+        margin-bottom: 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 12px;
+      }
+      .child-ul_inline ul {
+        margin: 0 !important;
+      }
+      .child-ul_inline ul li {
+        margin: 0 !important;
+      }
+    </style>
+    <style is:global>
+      /***
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ____________________________________________ mafia ________________________
+      *  _______________________██╗_██████╗_██████╗_██╗__██╗________________________
+      *  ______________________███║██╔═████╗╚════██╗██║__██║________________________
+      *  ______________________╚██║██║██╔██║_█████╔╝███████║________________________
+      *  _______________________██║████╔╝██║██╔═══╝_╚════██║________________________
+      *  _______________________██║╚██████╔╝███████╗_____██║________________________
+      *  _______________________╚═╝_╚═════╝_╚══════╝_____╚═╝________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      *  ___________________________________________________________________________
+      */
+    </style>
+  </head>
+
+  <body class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
+    <!-- <body class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark flex items-center justify-center h-[100vh]"> -->
+    <slot />
+    <!-- <h1 class="text-4xl font-bold text-center">Coming Soon</h1> -->
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>
