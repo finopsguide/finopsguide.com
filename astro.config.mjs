@@ -8,7 +8,9 @@ export default defineConfig({
 		starlight({
 			title: 'My Docsss',
 			logo: {
-				src: './src/assets/images/finopsguide-logo-orig-removebg-preview.png',
+				// src: './src/assets/images/finopsguide-547x127.png',
+				light: './src/assets/images/finopsguide-547x127.png',
+				dark: './src/assets/images/finopsguide-547x127-inverted.png',
 				replacesTitle: true,
 				alt: 'Finops Guide',
 			},
