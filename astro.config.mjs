@@ -33,6 +33,21 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+				{
+					label: 'FinopsGuide',
+					items: [
+						{ label: 'Contact Form', link: '/contact' },
+						{ label: 'Write for Us', link: '/write' },
+						{ label: 'Suggest a topic', link: '/suggest' },
+					],
+				},
+				{
+					label: 'Terms',
+					items: [
+						{ label: 'Privacy Policy', link: '/privacy-policy' },
+						{ label: 'Terms of Service', link: '/tos' },
+					],
+				},
 			],
 		}),
 	],
