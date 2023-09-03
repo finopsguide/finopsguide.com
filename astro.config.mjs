@@ -36,9 +36,9 @@ export default defineConfig({
 				{
 					label: 'FinopsGuide',
 					items: [
-						{ label: 'Contact Form', link: '/contact' },
-						{ label: 'Write for Us', link: '/write' },
-						{ label: 'Suggest a topic', link: '/suggest' },
+						{ label: 'Contact Us', link: '/contact' },
+						{ label: 'Write for Us', link: '/contact#write-for-us' },
+						{ label: 'Suggest a topic', link: '/contact#suggest-a-topic' },
 					],
 				},
 				{
@@ -54,7 +54,7 @@ export default defineConfig({
 
 	// Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
 	// image: { service: { entrypoint: 'astro/assets/services/sharp' } },
-	experimental: {
-    assets: true
-  },
+	// experimental: {
+	// 	assets: true
+	// },
 });
